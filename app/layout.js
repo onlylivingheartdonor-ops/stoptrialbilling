@@ -1,24 +1,51 @@
 export const metadata = {
   title: "Stop Trial Billing | Cancel Free Trials Before They Charge You",
-  description: "Find direct links to cancel free trials for Netflix, Spotify, Amazon Prime, Disney+, and 20+ other services. Stop unwanted subscription charges.",
-  alternates: { canonical: "https://www.stoptrialbilling.com" },
+  description: "Find direct links to cancel free trials for Netflix, Spotify, Amazon Prime, Disney+, and 20+ other services. Stop unwanted subscription charges before they happen.",
+
+  alternates: {
+    canonical: "https://www.stoptrialbilling.com",
+  },
+
   openGraph: {
     title: "Stop Trial Billing | Cancel Free Trials Before They Charge You",
-    description: "Find direct links to cancel free trials for Netflix, Spotify, Amazon Prime, Disney+, and 20+ other services.",
+    description: "Find direct links to cancel free trials for Netflix, Spotify, Amazon Prime, Disney+, and 20+ other services. Stop unwanted subscription charges.",
     url: "https://www.stoptrialbilling.com",
-    siteName: "Moneywise Calculators",
-    images: [{ url: "https://www.stoptrialbilling.com/og-image.png", width: 1200, height: 630, alt: "Stop Trial Billing" }],
+    siteName: "Stop Trial Billing",
+    images: [
+      {
+        url: "https://www.stoptrialbilling.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Stop Trial Billing -- Cancel free trials before they charge you",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Stop Trial Billing | Cancel Free Trials",
-    description: "Find direct links to cancel free trials for 20+ services.",
+    title: "Stop Trial Billing | Cancel Free Trials Before They Charge You",
+    description: "Find direct links to cancel free trials for Netflix, Spotify, Amazon Prime, Disney+, and 20+ other services.",
   },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
-  icons: { icon: "/favicon.ico", shortcut: "/favicon.ico", apple: "/apple-touch-icon.png" },
-  viewport: { width: "device-width", initialScale: 1, maximumScale: 5 },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
   authors: [{ name: "David Graham" }],
   creator: "MoneyWise Calculators",
   publisher: "MoneyWise Calculators",
@@ -40,11 +67,21 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebApplication",
               name: "Stop Trial Billing",
-              description: "Directory of free trial cancellation links for 20+ subscription services",
+              description: "Directory of direct cancellation links for free trials from Netflix, Spotify, Amazon Prime, Disney+, and 20+ other subscription services.",
               url: "https://www.stoptrialbilling.com",
-              applicationCategory: "Utility",
+              applicationCategory: "UtilitiesApplication",
               operatingSystem: "All",
-              offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+              browserRequirements: "Requires JavaScript",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD"
+              },
+              author: {
+                "@type": "Organization",
+                name: "MoneyWise Calculators",
+                url: "https://moneywisecalculator.com"
+              }
             }),
           }}
         />

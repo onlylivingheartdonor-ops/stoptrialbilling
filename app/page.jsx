@@ -153,7 +153,36 @@ export default function Page() {
             </div>
           </div>
         </div>
-
+        {/* REAL-WORLD EXAMPLE */}
+        <div className="stb-card">
+          <p className="stb-section-title">Real-world example: The cost of forgetting to cancel</p>
+          <div className="stb-prose">
+            <p><strong>Meet Lisa.</strong> In January, she signed up for three free trials: a streaming service, a fitness app, and a productivity tool. Each required a credit card at signup.</p>
+          </div>
+          
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginTop: "1rem" }}>
+            <div style={{ background: "#fff1f2", padding: "1rem", borderRadius: "4px", border: "1px solid #fcd4d4" }}>
+              <p style={{ fontSize: "12px", fontWeight: "500", color: "#b91c1c", marginBottom: ".5rem" }}>❌ Forgot to cancel</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}>Trial ends, all three services start billing.</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}><strong>Monthly cost:</strong> $15 + $10 + $12 = $37/month</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}><strong>After 6 months:</strong> $222 wasted</p>
+              <p style={{ fontSize: "13px", color: "#b91c1c", fontWeight: "500", marginTop: ".5rem" }}>She kept paying for services she barely used.</p>
+            </div>
+            
+            <div style={{ background: "#f0fdf4", padding: "1rem", borderRadius: "4px", border: "1px solid #b7d9c8" }}>
+              <p style={{ fontSize: "12px", fontWeight: "500", color: "#166534", marginBottom: ".5rem" }}>✅ Cancelled immediately</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}>Same trials, but cancelled right after signing up.</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}><strong>Result:</strong> Still enjoyed full trial access</p>
+              <p style={{ fontSize: "13px", color: "#444", marginBottom: ".5rem" }}><strong>Charged:</strong> $0</p>
+              <p style={{ fontSize: "13px", color: "#166534", fontWeight: "500", marginTop: ".5rem" }}>She kept the full trial period without the risk.</p>
+            </div>
+          </div>
+          
+          <div style={{ marginTop: "1rem", padding: "1rem", background: "#f5f3ef", borderRadius: "4px" }}>
+            <p style={{ fontSize: "13px", color: "#1a1a1a", fontWeight: "500", marginBottom: ".25rem" }}>The bottom line:</p>
+            <p style={{ fontSize: "13px", color: "#444" }}>The difference between Lisa's two outcomes was <strong>5 minutes</strong> of clicking. One resulted in $222 in wasted charges; the other cost nothing. Find your service above, click Cancel, and protect yourself before the trial ends.</p>
+          </div>
+        </div>
         {/* PRO TIPS */}
         <div className="stb-card">
           <p className="stb-section-title">Pro tips for managing free trials</p>
